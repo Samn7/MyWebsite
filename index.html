@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
+    <div class="splash-screen" id="splash-screen">
+        <div class="splash-content">
+            <h1>Hi, I'm Saksham Anand</h1>
+            <p>Welcome to my portfolio</p>
+        </div>
+    </div>
+
     <div class="sidebar">
         <div class="profile-photo">
             <img src="profile.jpg" alt="Saksham Anand">
@@ -60,6 +67,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const splashScreen = document.getElementById('splash-screen');
+            setTimeout(() => {
+                splashScreen.style.opacity = '0';
+                splashScreen.style.pointerEvents = 'none';
+            }, 3000);
+        });
     </script>
 </body>
 </html>
