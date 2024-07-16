@@ -4,36 +4,6 @@ body {
     padding: 0;
     background-color: #121212;
     color: #E0E0E0;
-    overflow: hidden;
-}
-
-.splash-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    transition: opacity 1s ease-in-out;
-}
-
-.splash-content {
-    text-align: center;
-    color: #4CAF50;
-}
-
-.splash-content h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.splash-content p {
-    font-size: 1.25rem;
-    margin: 10px 0 0;
 }
 
 .sidebar {
@@ -46,7 +16,6 @@ body {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 900;
-    transition: transform 0.3s ease-in-out;
 }
 
 .profile-photo {
@@ -92,7 +61,6 @@ body {
 .main-content {
     margin-left: 270px;
     padding: 20px;
-    transition: margin-left 0.3s ease-in-out;
 }
 
 section {
