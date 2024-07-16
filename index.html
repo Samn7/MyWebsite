@@ -19,11 +19,10 @@
             <p>I am a full stack developer - I harmonize the realms of front-end finesse and back-end wizardry, to create immersive experiences!</p>
             <div class="social-icons">
                 <a href="https://github.com/yourusername" target="_blank"><img src="path-to-github-icon.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/
-samn-smith-50b748314" target="_blank"><img src="path-to-linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="path-to-linkedin-icon.png" alt="LinkedIn"></a>
                 <a href="https://twitter.com/yourusername" target="_blank"><img src="path-to-twitter-icon.png" alt="Twitter"></a>
             </div>
-            <a href="mailto:Sakshamanand190@gmail.com" class="work-with-me">Work with me</a>
+            <a href="#" class="work-with-me" onclick="openMailClient()">Work with me</a>
         </div>
         <nav>
             <ul>
@@ -80,7 +79,16 @@ samn-smith-50b748314" target="_blank"><img src="path-to-linkedin-icon.png" alt="
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
+
+        function openMailClient() {
+            const email = 'saksham@example.com';
+            const subject = encodeURIComponent('Work with Saksham Anand');
+            const body = encodeURIComponent('Hello Saksham,\n\nI would like to discuss a potential collaboration with you.\n\nBest regards,');
+            const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+            window.open(mailtoLink, '_blank');
+        }
     </script>
 </body>
 </html>
+
 
