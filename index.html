@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Profile</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
@@ -21,11 +22,11 @@
         </ul>
     </nav>
     <main>
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
             <p>I am a software developer with a passion for building web applications and exploring new technologies.</p>
         </section>
-        <section id="experience">
+        <section id="experience" data-aos="fade-up">
             <h2>Experience</h2>
             <h3>Software Developer at TechCorp</h3>
             <p>June 2020 - Present</p>
@@ -34,7 +35,7 @@
             <p>January 2018 - May 2020</p>
             <p>Assisted in the development of client websites and web applications.</p>
         </section>
-        <section id="skills">
+        <section id="skills" data-aos="fade-up">
             <h2>Skills</h2>
             <ul>
                 <li>HTML & CSS</li>
@@ -44,12 +45,12 @@
                 <li>Node.js</li>
             </ul>
         </section>
-        <section id="education">
+        <section id="education" data-aos="fade-up">
             <h2>Education</h2>
             <h3>Bachelor of Science in Computer Science</h3>
             <p>University of Technology, 2014 - 2018</p>
         </section>
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <h2>Contact</h2>
             <p>Email: sam@example.com</p>
         </section>
@@ -57,5 +58,10 @@
     <footer>
         <p>&copy; 2024 Sam</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
