@@ -57,9 +57,10 @@ body {
 
 .social-icons a {
     display: inline-block;
-    padding: 5px; /* Padding inside the white box */
+    padding: 2px; /* Minimal padding */
     background-color: #FFFFFF; /* White background for the box */
     border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
 .social-icons img {
