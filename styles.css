@@ -109,6 +109,52 @@ body {
     padding: 20px;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #B0B0B0;
+    margin: 20px 0;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6B6B;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #FF3B3B;
+}
+
 section {
     margin-bottom: 2rem;
     background: #1E1E1E;
