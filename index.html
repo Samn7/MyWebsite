@@ -76,6 +76,8 @@
         </section>
     </div>
 
+    <button id="toTopBtn" onclick="scrollToTop()">Top</button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
@@ -86,6 +88,29 @@
             const body = encodeURIComponent('Hello Saksham,\n\nI would like to discuss a potential collaboration with you.\n\nBest regards,');
             const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
             window.open(mailtoLink, '_blank');
+        }
+
+        document.querySelectorAll('.sidebar nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const toTopBtn = document.getElementById('toTopBtn');
+            if (window.scrollY > 300) {
+                toTopBtn.style.display = 'block';
+            } else {
+                toTopBtn.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
